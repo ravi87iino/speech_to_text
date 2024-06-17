@@ -12,13 +12,12 @@ def record_audio(duration, sample_rate):
     print("Recording complete.")
     return audio_data.flatten()
 
-# Function to reduce noise
+
 def reduce_noise(audio_data, sample_rate):
-    noise_sample = audio_data[:sample_rate]  # Use the first second as noise sample
+    noise_sample = audio_data[:sample_rate] 
     reduced_noise_audio = nr.reduce_noise(y=audio_data, sr=sample_rate, y_noise=noise_sample)
     return reduced_noise_audio
 
-# Function to recognize speech from audio data
 def recognize_speech_from_audio(audio_data, sample_rate):
     recognizer = sr.Recognizer()
     sf.write("temp.wav", audio_data, sample_rate)
@@ -35,8 +34,8 @@ def recognize_speech_from_audio(audio_data, sample_rate):
         return "Unable to recognize speech"
 
 if __name__ == "__main__":
-    # Parameters
-    duration = 5  # Duration of recording in seconds (shortened to reduce issues)
+    
+    duration = 5  # Duration of recording in seconds
     sample_rate = 16000  # Sample rate for recording
 
     # Record audio
