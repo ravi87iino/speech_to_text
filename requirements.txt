@@ -1,6 +1,6 @@
-SpeechRecognition
-sounddevice
-numpy
-noisereduce
-soundfile
-streamlit
+streamlit==1.20.0
+numpy==1.24.2
+sounddevice==0.4.5
+soundfile==0.12.1
+noisereduce==2.0.0
+SpeechRecognition==3.8.1
