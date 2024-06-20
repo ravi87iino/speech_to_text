@@ -3,3 +3,4 @@ sounddevice
 numpy
 noisereduce
 soundfile
+streamlit
