@@ -4,4 +4,3 @@ pyaudio
 soundfile
 noisereduce
 SpeechRecognition
-portaudio
