@@ -1,1 +1,1 @@
-Works on English word only
+Works good on English language.
