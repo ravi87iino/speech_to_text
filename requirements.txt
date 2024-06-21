@@ -1,6 +1,6 @@
 streamlit
 numpy
-pyaudio
+sounddevice
 soundfile
 noisereduce
 SpeechRecognition
